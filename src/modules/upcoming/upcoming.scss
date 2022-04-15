@@ -1,0 +1,140 @@
+.upcoming{
+  height: 146px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @include display-320{
+    height: 114px;
+  }
+
+  h3{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    position: relative;
+    z-index: 3;
+
+    @include display-320{
+      font-size: 25px;
+      line-height: 40px;
+      margin-top: 26px;
+    }
+  }
+
+
+  .fill1{
+    position: absolute;
+    top:38px;
+    left: 3.9%;
+
+    @include display-320{
+      display: none;
+    }
+  }
+  .fill2{
+    position: absolute;
+    top:101px;
+    left: 10.6%;
+
+    @include display-320{
+      top: 63px;
+      left: 7px;
+      width: 14px;
+      height: 13px;
+    }
+  }
+  .fill3{
+    position: absolute;
+    top:64px;
+    left: 17%;
+
+    @include display-320{
+      display: none;
+    }
+  }
+  .fill4{
+    position: absolute;
+    top:45px;
+    left: 26.8%;
+
+    @include display-320{
+      top: 22px;
+      left: 65px;
+      width: 20px;
+      height: 21px;
+    }
+  }
+  .fill5{
+    position: absolute;
+    top:11px;
+    left: 38.4%;
+
+    @include display-320{
+      top: 22px;
+      left: 136px;
+      width: 12px;
+      height: 13px;
+    }
+  }
+  .fill6{
+    position: absolute;
+    top:30px;
+    left: 67.7%;
+
+    @include display-320{
+      top: 39px;
+      left: 31px;
+      width: 14px;
+      height: 13px;
+    }
+  }
+  .fill7{
+    position: absolute;
+    top:80px;
+    left: 73.1%;
+
+    @include display-320{
+      top: 26px;
+      left: 239px;
+      width: 20px;
+      height: 21px;
+    }
+  }
+  .fill8{
+    position: absolute;
+    top:54px;
+    left: 82%;
+
+    @include display-320{
+      display: none;
+    }
+  }
+  .fill9{
+    position: absolute;
+    top:67px;
+    left: 87.9%;
+
+    @include display-320{
+      top: 49px;
+      left: 284px;
+      width: 20px;
+      height: 21px;
+      transform: rotate(40deg);
+    }
+  }
+  .fill10{
+    position: absolute;
+    top:76px;
+    left: 96.5%;
+
+    @include display-830{
+      display: none;
+    }
+  }
+
+}

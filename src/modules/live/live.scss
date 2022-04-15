@@ -1,0 +1,35 @@
+.live{
+  background-color: #000;
+  min-height: 315px;
+  padding: 22px 19px 36px 22px;
+  margin-top: 304px;
+
+  @include display-768{
+    margin-top: 255px;
+  }
+
+  h2{
+    color: #fff;
+    margin-top: 40px;
+    padding-bottom: 29px;
+
+    @include display-320{
+      font-size: 25px;
+      line-height: 63px;
+    }
+  }
+
+  p{
+    max-width: 660px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 27px;
+
+    @include display-320{
+      line-height: 25px;
+    }
+  }
+}

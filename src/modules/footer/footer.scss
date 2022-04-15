@@ -1,0 +1,207 @@
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F2F2F2;
+  min-height: 246px;
+  margin-top: 80px;
+
+  @include display-768 {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .nav-div {
+    width: 100%;
+
+    @include display-600 {
+      order: 2;
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .find-us{
+
+        @include display-600{
+         display: none;
+        }
+      }
+
+      .social-links{
+        display: none;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 10px;
+        a{
+          display: block;
+          margin-right: 4px;
+          margin-left: 4px;
+          img{
+            width: 17px;
+            height: 17px;
+          }
+        }
+
+        @include display-600 {
+          display: flex;
+          border-bottom: none;
+        }
+      }
+
+      @include display-600 {
+        flex-direction: column;
+        border-top: 1px solid #000;
+      }
+
+      & > li {
+        .plus {
+          display: none;
+          width: 10px;
+          height: 10px;
+          position: relative;
+          z-index: 5;
+
+
+          &.open {
+            &::after {
+              transform: rotate(90deg);
+              transform-origin: center center;
+              transition: 0.5s ease;
+            }
+          }
+
+          &::before {
+            content: '';
+            width: 10px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            margin: auto;
+          }
+
+          &::after {
+            content: '';
+            width: 1px;
+            height: 10px;
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            margin: auto;
+            transition: 0.5s ease;
+          }
+
+          @include display-600 {
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+          }
+        }
+
+        @include display-600 {
+          flex-direction: column;
+          border-bottom: 1px solid #000;
+          padding: 6px 30px 6px 20px;
+          position: relative;
+        }
+
+        a {
+          font-family: "Inter", sans-serif;
+          font-weight: 900;
+          font-size: 11px;
+          line-height: 17px;
+          color: #000000;
+        }
+
+        .sub-menu {
+          margin-top: 10px;
+
+          @include display-600 {
+            display: none;
+          }
+
+          li {
+            a {
+
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .form-div {
+    max-width: 255px;
+    width: 100%;
+    margin-right: 40px;
+
+    @include display-600 {
+      order: 1;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    h6 {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 11px;
+      line-height: 17px;
+      color: #000000;
+    }
+
+    form {
+      position: relative;
+      border-bottom: 1px solid #000;
+      margin-top: 10px;
+
+      input[type="email"] {
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
+        font-size: 11px;
+        line-height: 17px;
+        color: #9F9C9C;
+        background-color: transparent;
+      }
+
+      input[type="submit"] {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-image: url("../img/arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center right;
+        width: 40px;
+        height: 20px;
+        background-color: transparent;
+        transition: .5s ease;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateX(10px);
+          transition: .5s ease;
+        }
+      }
+    }
+
+
+  }
+}
